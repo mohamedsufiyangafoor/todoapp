@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Todo App</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <div class="todo">
+        <h1 class="todo-header">Todo List</h1><br>
+        <form class="form">
+            <label for="task-input">Add a new task...</label><br>
+            <input class="task-input" id="task-input" type="text" required />
+            <input class="submit" type="submit" value="Add" />
+        </form>
+      <div class="todo-list">
+        
+      </div>
+      <div class="reset">
+        <button onClick="DeleteAll()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

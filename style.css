@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 3em 10em 10em 10em;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.todo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: dotted 1px greenyellow;
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	padding: 3em 1em 3em 1em;
+	
+}
+
+h1 {
+	font-weight: 300;
+	max-width: 300px;
+	text-align: center;
+}
+
+
+label {
+	text-align: center;
+	font-weight: lighter;
+}
+
+button {
+	border: none;
+	font-family: inherit;
+	cursor: pointer;
+	border : 2px solid black;
+	padding : 10px 10px;
+}
+.task-input {
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+input[type=text], textarea {
+	outline: none;
+	border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+	border: 1px solid black;
+}
+
+.submit {
+	border: none;
+	font-family: inherit;
+	cursor: pointer;
+	background-color: white;
+	border: solid 1px black;
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: black;
+	padding: 0.4em;
+	border-radius: 5%;
+	
+}
+
+.todo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	max-width: 800px;
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2px 1px 0px 1px;
+	padding: 0px 1px 1px 1px;
+	max-height: 300px;
+	
+}
+
+
+.todo-list-task {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0em 1em 1em 1em;
+	color: black;
+	text-align: center;
+	max-width: 600px;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+} 
+
+.remove-button {
+	align-items: center;
+	margin: 0em 0em 0em  0.6em;
+	color: black;
+
+}
+
+.todo-list-task__done {
+	order: 1;
+	text-decoration: line-through;
+	color: black;
+}
